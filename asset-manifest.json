@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/abogadosmdq/static/css/main.807cccbe.css",
+    "main.js": "/abogadosmdq/static/js/main.23109691.js",
+    "static/media/top-view-career-guidance-items-judges.jpg": "/abogadosmdq/static/media/top-view-career-guidance-items-judges.8926d8abe266d90fea67.jpg",
+    "static/media/interior-design-old-architecture.jpg": "/abogadosmdq/static/media/interior-design-old-architecture.0604611f347b889b0d04.jpg",
+    "static/media/fast-backward-7740725-unscreen.gif": "/abogadosmdq/static/media/fast-backward-7740725-unscreen.da57e2fde102a557eac1.gif",
+    "static/media/Montserrat-ExtraLightItalic.ttf": "/abogadosmdq/static/media/Montserrat-ExtraLightItalic.8df5777e3ea85687bdf0.ttf",
+    "static/media/Montserrat-Medium.ttf": "/abogadosmdq/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
+    "static/media/Montserrat-Light.ttf": "/abogadosmdq/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "static/media/balanza3d.webp": "/abogadosmdq/static/media/balanza3d.fd4e07e9225af1586cab.webp",
+    "static/media/Artifika-Regular.ttf": "/abogadosmdq/static/media/Artifika-Regular.06e5776d676b077bd871.ttf",
+    "static/media/manosTrato.webp": "/abogadosmdq/static/media/manosTrato.4adfd1a16154e8302681.webp",
+    "static/media/logoAbogados.webp": "/abogadosmdq/static/media/logoAbogados.2a6d7d04b32f469896d4.webp",
+    "static/media/christianmcinnes.webp": "/abogadosmdq/static/media/christianmcinnes.dadbeedfeb95074061c3.webp",
+    "static/media/alejandrogualdi.webp": "/abogadosmdq/static/media/alejandrogualdi.776a032e9f3f9a8b2b50.webp",
+    "static/media/cencosud.svg": "/abogadosmdq/static/media/cencosud.01eb8fe020cbb07b933b358ec61bb12e.svg",
+    "static/media/camaron.svg": "/abogadosmdq/static/media/camaron.9776df4d6c573b5f7cb0b5880ec1c8df.svg",
+    "index.html": "/abogadosmdq/index.html",
+    "main.807cccbe.css.map": "/abogadosmdq/static/css/main.807cccbe.css.map",
+    "main.23109691.js.map": "/abogadosmdq/static/js/main.23109691.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.807cccbe.css",
+    "static/js/main.23109691.js"
+  ]
+}
