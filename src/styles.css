@@ -1,0 +1,518 @@
+h1, h2, h3, h4, h5, p, div, img, option, select, body, a, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "artifika";
+    src: url(../src/Fonts/Artifika-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(../src/Fonts/MontSerrat/Montserrat-Medium.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "montserrat-thin";
+    src: url(../src/Fonts/MontSerrat/Montserrat-Light.ttf) format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "montserrat-italic";
+    src: url(../src/Fonts/MontSerrat/Montserrat-ExtraLightItalic.ttf) format("truetype");
+    font-weight: 400;
+}
+
+body{
+    height: 500dvh;
+    font-family: artifika;
+}
+
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    z-index: 100;
+}
+
+.nav{
+    justify-content: space-around;
+    width: 50%;
+    border: 1px solid #CF944E;
+    filter: drop-shadow(0px 0px 4px #00000079);
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #0000007a;
+
+}
+
+.logo{
+    width: 20%;
+    text-align: center;
+}
+
+.logo img{
+    width: clamp(7rem, 16dvw, 10rem);
+    filter: drop-shadow(2px 2px 2px #000);
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: #eee;
+    width: 100%;
+    font-size: clamp(0.7rem, 1.4dvw, 1rem);
+}
+
+.nav__item{
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.6s;
+    padding: 5px 0;
+}
+
+.nav__item:hover{
+    background-color: #434b86;
+}
+
+.first__page{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    background-color: #10132A;
+    position: relative;
+}
+
+
+.juzgado-img{ 
+    width: 35%;
+    background-image: linear-gradient(#0009, #0009), url(Imagenes-abogados/top-view-career-guidance-items-judges.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.first__page-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    margin: auto;
+    align-items: center;
+}
+
+.first__page-text img{
+    width: 60px;
+    filter: hue-rotate(230deg);
+    transform: rotate(270deg);
+    position: absolute;
+    bottom: 10%;
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(1.4rem, 4dvw, 3rem);
+    color: #eee;
+    font-weight: 100;
+    animation: aparecer 1s ease-in both;
+}
+
+.title__estudio{
+    color: #CF944E;
+}
+
+.button__contact{
+    background-color: transparent;
+    border: 1px solid #eee;
+    padding: 5% 15%;
+    border-radius: 5px;
+    color: #eee;
+    font-family: artifika;
+    text-decoration: none;
+    animation: aparecer_costado 1s ease-in-out both;
+    transition: background-color 0.5s;
+}
+
+.button__contact:hover{
+    background-color: #434b86;
+}
+
+/* animaciones first page */
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        scale: 0.1;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes aparecer_costado {
+    from{
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* CONOCENOS */
+
+.conocenos{
+    background-color: #10132A;
+    height: 80dvh;
+    max-height: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 50px;
+
+}
+
+.conocenos__text-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    height: 100%;
+}
+
+.conocenos__title{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #CF944E;
+    font-size: clamp(1.4rem, 2.2dvw, 2rem);
+}
+
+.conocenos__text{
+    color: #ffffff;
+    font-weight: 100;
+    width: 80%;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 20px #00000098);
+    font-family: montserrat-thin;
+}
+
+
+
+.conocenos__img{
+    width: 30%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+
+.balanza3d{
+    position: absolute;
+    width: clamp(10rem, 100%, 22rem);
+    opacity: 0.7;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 20px #000);
+}
+
+.años50{
+    z-index: 10;
+
+    color: #433727;
+    text-align: center;
+    background: linear-gradient(#CF944E, #742700);
+    padding: 30px;
+    border-radius: 20px 0px 20px 0px;
+    width: clamp(100px, 70%, 190px);
+    margin: auto;
+    box-shadow: 0px 0px 20px #000000;
+    font-family: montserrat-italic;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .conocenos{
+        padding-top: 80px;
+        flex-direction: column;
+        justify-content: center;
+        height: 120dvh;
+    }
+
+    .conocenos__text-wrapper{
+        width: 100%;
+        z-index: 22;
+        margin-bottom: 30px;
+    }
+
+    .conocenos__img{
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .balanza3d{
+        width: clamp(10rem, 65%, 25rem);
+        margin: auto;
+        opacity: 0.5;
+    }
+}
+
+
+/* banner 1*/
+
+.banner{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 50px #000) drop-shadow(0px 0px 10px #000);
+
+}
+
+.banner1{
+    background: linear-gradient(#000b, #000b), url(Imagenes-abogados/manosTrato.webp) center/ cover fixed;
+
+
+}
+
+.banner__title{
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-size: clamp(1rem, 2.2dvw, 4rem);
+    filter: drop-shadow(0px 0px 20px #fff);
+}
+
+/* team */
+
+@keyframes hero-gradient-animation{0%{--s-start-0:1%; --s-end-0:61%; --x-0:91%; --y-0:90%; --c-0:rgb(14, 21, 65); --s-start-1:0%; --s-end-1:55%; --x-1:17%; --c-1:hsla(75,0%,0%,1); --y-1:24%; --s-start-2:19%; --s-end-2:54%; --c-2:rgb(34, 0, 255); --x-2:11%; --y-2:32%; --x-3:2%; --c-3:hsla(254,100%,52%,1); --s-start-3:0%; --s-end-3:67%; --y-3:31%; --y-4:93%; --c-4:hsla(349,0%,0%,1); --s-start-4:12%; --s-end-4:82%; --x-4:74%;}100%{--s-start-0:19%; --s-end-0:69%; --x-0:49%; --y-0:25%; --c-0:rgb(45, 15, 107); --s-start-1:3%; --s-end-1:77%; --x-1:1%; --c-1:hsla(242,88%,22%,1); --y-1:41%; --s-start-2:6%; --s-end-2:73%; --c-2:rgb(201, 100, 53); --x-2:44%; --y-2:93%; --x-3:97%; --c-3:hsla(0,0%,0%,1); --s-start-3:8%; --s-end-3:86%; --y-3:51%; --y-4:69%; --c-4:rgb(200, 134, 34); --s-start-4:20%; --s-end-4:75%; --x-4:10%;}}@property --s-start-0{syntax:'<percentage>';inherits:false;initial-value:1%}@property --s-end-0{syntax:'<percentage>';inherits:false;initial-value:61%}@property --x-0{syntax:'<percentage>';inherits:false;initial-value:91%}@property --y-0{syntax:'<percentage>';inherits:false;initial-value:90%}@property --c-0{syntax:'<color>';inherits:false;initial-value:hsla(97,2%,11%,1)}@property --s-start-1{syntax:'<percentage>';inherits:false;initial-value:0%}@property --s-end-1{syntax:'<percentage>';inherits:false;initial-value:55%}@property --x-1{syntax:'<percentage>';inherits:false;initial-value:17%}@property --c-1{syntax:'<color>';inherits:false;initial-value:hsla(75,0%,0%,1)}@property --y-1{syntax:'<percentage>';inherits:false;initial-value:24%}@property --s-start-2{syntax:'<percentage>';inherits:false;initial-value:19%}@property --s-end-2{syntax:'<percentage>';inherits:false;initial-value:54%}@property --c-2{syntax:'<color>';inherits:false;initial-value:hsla(248,37%,20%,1)}@property --x-2{syntax:'<percentage>';inherits:false;initial-value:11%}@property --y-2{syntax:'<percentage>';inherits:false;initial-value:32%}@property --x-3{syntax:'<percentage>';inherits:false;initial-value:2%}@property --c-3{syntax:'<color>';inherits:false;initial-value:hsla(254,100%,52%,1)}@property --s-start-3{syntax:'<percentage>';inherits:false;initial-value:0%}@property --s-end-3{syntax:'<percentage>';inherits:false;initial-value:67%}@property --y-3{syntax:'<percentage>';inherits:false;initial-value:31%}@property --y-4{syntax:'<percentage>';inherits:false;initial-value:93%}@property --c-4{syntax:'<color>';inherits:false;initial-value:hsla(349,0%,0%,1)}@property --s-start-4{syntax:'<percentage>';inherits:false;initial-value:12%}@property --s-end-4{syntax:'<percentage>';inherits:false;initial-value:82%}@property --x-4{syntax:'<percentage>';inherits:false;initial-value:74%}.team{--x-0:91%;--y-0:90%;--c-0:hsla(97,2%,11%,1);--x-1:17%;--c-1:hsla(75,0%,0%,1);--y-1:24%;--c-2:hsla(248,37%,20%,1);--x-2:11%;--y-2:32%;--x-3:2%;--c-3:hsla(254,100%,52%,1);--y-3:31%;--y-4:93%;--c-4:hsla(349,0%,0%,1);--x-4:74%;;background-color:hsla(356,0%,0%,1);background-image:radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0),transparent var(--s-end-0)),radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1),transparent var(--s-end-1)),radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2),transparent var(--s-end-2)),radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3),transparent var(--s-end-3)),radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4),transparent var(--s-end-4));animation:hero-gradient-animation 10s linear infinite alternate;background-blend-mode:normal,normal,normal,normal,normal;}
+
+.team{
+    height: fit-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.team__title{
+    color: #CF944E;
+    padding: 100px;
+    text-align: center;
+    font-size: clamp(1.2rem, 2.2vw, 2rem);
+}
+
+.card__wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    width: 100%;
+    background-color: #ffffff19;
+    display: flex;
+    align-items: center;
+}
+
+.card__img{
+    width: 33%;
+}
+
+.text__wrapper{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.team__name{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    text-wrap:balance;
+    padding-bottom: 10px;
+}
+
+.christian__subtitle{
+    font-size: clamp(0.8rem, 2vw, 3rem);
+    color: #CF944E;
+}
+
+.card__list{
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+.card__list-item{
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+
+}
+
+.card__list a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: color 0.6s;
+}
+
+.card__list a:hover{
+    color: #CF944E;
+}
+
+
+@media screen and (max-width: 700px) {
+    .card{
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 30px;
+        border-bottom: 7px solid #CF944E;
+    }
+
+    .card__wrapper{
+        width: clamp(300px, 60%, 700px);
+    }
+
+    .card__img{
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* banner 2*/
+
+.banner2{
+    background: linear-gradient(#000b, #000b), url(Imagenes-abogados/interior-design-old-architecture.jpg) center/ cover fixed;
+}
+
+
+/* clients */
+
+.clientes{
+    height: 80vh;
+    padding-top: 50px;
+    background-color: #10132A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clients__text-wrapper{
+    color: #fff;
+}
+
+.clients__title{
+    text-align: center;
+    color: #CF944E;
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+.clients__text{
+    width: 60%;
+    min-width: 300px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.carrousel{
+    width: 80%;
+    max-width: 1100px;
+    box-shadow: 0px 0px 10px #898888;
+    padding: 10px;
+    background-color: #CF944E;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.carrousel::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background: linear-gradient(to right, #140a5892, transparent);
+    height: 100%;
+    
+}
+
+.carrousel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    background: linear-gradient(to left, #140a5892, transparent);
+    height: 100%;
+}
+
+
+.client__logo{
+    max-width: 200px;
+    max-height: 150px;
+    margin: 20px 40px;
+    vertical-align: middle;
+}
+
+.logos__wrapper{
+    display: flex;
+}
+
+.sliderNew{
+    animation: slider 12s infinite linear;
+}
+
+
+/* animacion clientes */ 
+
+@keyframes slider {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+@media screen and (max-width: 40rem){
+    .carrousel{
+        width: 95%;
+    }
+}
