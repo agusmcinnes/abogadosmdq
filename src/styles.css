@@ -102,7 +102,7 @@ header{
 
 .juzgado-img{ 
     width: 35%;
-    background-image: linear-gradient(#0009, #0009), url(Imagenes-abogados/top-view-career-guidance-items-judges.jpg);
+    background-image: linear-gradient(#0009, #0009), url(Imagenes-abogados/top-view-career-guidance-items-judges.webp);
     background-position: top;
     background-size: cover;
 }
@@ -292,9 +292,17 @@ h1{
 }
 
 .banner1{
-    background: linear-gradient(#000b, #000b), url(Imagenes-abogados/manosTrato.webp) center/ cover fixed;
+    background: linear-gradient(#000b, #000b), url(Imagenes-abogados/manosTrato.webp) center/ cover;
+    background-attachment: fixed;
 
 
+}
+
+@media screen and (max-width: 480px){
+    .banner1{
+        background: linear-gradient(#000b, #000b), url(Imagenes-abogados/manosTrato.webp) center/ cover;
+        background-attachment: initial;
+    }
 }
 
 .banner__title{
@@ -414,7 +422,15 @@ h1{
 /* banner 2*/
 
 .banner2{
-    background: linear-gradient(#000b, #000b), url(Imagenes-abogados/interior-design-old-architecture.jpg) center/ cover fixed;
+    background: linear-gradient(#000b, #000b), url(Imagenes-abogados/interior-design-old-architecture.jpg) center/ cover;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 480px) {
+    .banner2{
+        background: linear-gradient(#000b, #000b), url(Imagenes-abogados/interior-design-old-architecture.jpg) center/ cover;
+        background-attachment:initial;
+    }
 }
 
 
@@ -456,7 +472,7 @@ h1{
     background-color: #CF944E;
     overflow: hidden;
     white-space: nowrap;
-    border-radius: 20px;
+    border-radius: 5px;
     position: relative;
 }
 
@@ -484,9 +500,9 @@ h1{
 
 
 .client__logo{
-    max-width: 200px;
+    max-width: 300px;
     max-height: 150px;
-    margin: 20px 40px;
+    margin: 10px;
     vertical-align: middle;
 }
 
@@ -495,7 +511,7 @@ h1{
 }
 
 .sliderNew{
-    animation: slider 12s infinite linear;
+    animation: slider 19s infinite linear;
 }
 
 

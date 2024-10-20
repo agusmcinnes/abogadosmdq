@@ -2,7 +2,7 @@ import './styles.css';
 import Carrousel from './Carrousel';
 
 import logo from './Imagenes-abogados/logoAbogados.webp'
-import juzgado from './Imagenes-abogados/top-view-career-guidance-items-judges.jpg'
+import juzgado from './Imagenes-abogados/top-view-career-guidance-items-judges.webp'
 import balanza3d from './Imagenes-abogados/balanza3d.webp'
 import christian from './Imagenes-abogados/christianmcinnes.webp'
 import alejandro from './Imagenes-abogados/alejandrogualdi.webp'
