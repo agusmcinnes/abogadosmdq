@@ -1,61 +1,62 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const Areas = () => {
-  return (
+
+return (
     <section class="practice__section" id="areas">
-            <div class="areas__info">
+            <div class="areas__info aparecerDerecha">
                 <h2 class="areas__info-title">Áreas de práctica</h2>
                 <span class="areas__info-subtitle">Cobertura Legal Integral</span>
                 <p class="areas__info-text">Abarcamos diversas áreas de la representación letrada con el fin de brindar a nuestros clientes un servicio que resuelva todo tipo de conflictos y situaciones tanto de su vida profesional como personal.</p>
             </div>
-            <div class="areas__types">
-                <div class="area__item">
+            <div class="areas__types aparecerDerecha">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">heart_broken</span>
-                    <h5>Daños y Perjuicios</h5>
+                    <span>Daños y Perjuicios</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">contract_edit</span>
-                    <h5>Contratos</h5>
+                    <span>Contratos</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">apartment</span>
-                    <h5>Pymes y Grandes empresas</h5>
+                    <span>Pymes y Grandes empresas</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">gavel</span>
-                    <h5>Juicios ante Organismos administrativos</h5>
+                    <span>Juicios ante Organismos administrativos</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">car_crash</span>
-                    <h5>Accidentes de tránsito</h5>
+                    <span>Accidentes de tránsito</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">falling</span>
-                    <h5>Accidentes de trabajo</h5>
+                    <span>Accidentes de trabajo</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">content_cut</span>
-                    <h5>Divorcios</h5>
+                    <span>Divorcios</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">person_off</span>
-                    <h5>Despidos</h5>
+                    <span>Despidos</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">skull</span>
-                    <h5>Sucesiones</h5>
+                    <span>Sucesiones</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">article</span>
-                    <h5>Regularización de registro laboral</h5>
+                    <span>Regularización de registro laboral</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">person_alert</span>
-                    <h5>Maltrato y acoso laboral</h5>
+                    <span>Maltrato y acoso laboral</span>
                 </div>
-                <div class="area__item">
+                <div class="area__item aparecerScale">
                     <span class="material-symbols-outlined">work</span>
-                    <h5>Procesos ejecutivos</h5>
+                    <span>Procesos ejecutivos</span>
                 </div>
             </div>
     </section>
