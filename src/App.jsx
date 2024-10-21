@@ -1,34 +1,55 @@
 import './styles.css';
 import Carrousel from './Carrousel';
+import Areas from './Areas';
+import { faX, faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useEffect, useRef, useState} from 'react';
 
 import logo from './Imagenes-abogados/logoAbogados.webp'
-import juzgado from './Imagenes-abogados/top-view-career-guidance-items-judges.webp'
 import balanza3d from './Imagenes-abogados/balanza3d.webp'
 import christian from './Imagenes-abogados/christianmcinnes.webp'
 import alejandro from './Imagenes-abogados/alejandrogualdi.webp'
 import flecha from './Imagenes-abogados/fast-backward-7740725-unscreen.gif'
 
 function App() {
+
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const abrirMenu = () => {
+      setMenuVisible(!menuVisible);
+  };
+
+  const cerrarMenu = () => {
+      setMenuVisible(false);
+  };
+
   return (
     <div className="App">
         <header>
           <div className='logo'>
             <img src={logo} alt="" className='logo'/>
           </div>
+          <button className='open__button' onClick={abrirMenu} title='menu'>
+            <FontAwesomeIcon icon={faBars} />
+              
+            </button>
 
-          <nav className='nav'>
+            <nav className={`nav ${menuVisible ? 'visible' : ''}`}>
+            <button className='close__button' onClick={cerrarMenu} title='close'>
+                <FontAwesomeIcon icon={faX} />
+            </button>
             <ul className="nav__list">
               <li className="nav__item">
-                <a href="#" className="nav__link">Conocenós</a>
+                <a href="#conocenos" onClick={cerrarMenu} className="nav__link">Conocenós</a>
               </li>
               <li className="nav__item">
-                <a href="#" className="nav__link">Equipo</a>
+                <a href="#equipo" onClick={cerrarMenu} className="nav__link">Equipo</a>
               </li>
               <li className="nav__item">
-                <a href="#" className="nav__link">Clientes</a>
+                <a href="#clientes" onClick={cerrarMenu} className="nav__link">Clientes</a>
               </li>
               <li className="nav__item">
-                <a href="#" className="nav__link">Áreas</a>
+                <a href="#areas" onClick={cerrarMenu} className="nav__link">Áreas</a>
               </li>
             </ul>
           </nav>
@@ -40,11 +61,11 @@ function App() {
             <div className='first__page-text'>
                 <h1>Mc Innes & Gualdi <br /><span className='title__estudio'>Estudio Juridico</span></h1>
 
-                <a href="#" className='button__contact'>Contactanos</a>
+                <a href="#footer" className='button__contact'>Contactanos</a>
                 <img src={flecha} alt="" />
             </div>
         </section>
-        <section className='conocenos'>
+        <section className='conocenos' id='conocenos'>
             <div className='conocenos__text-wrapper'>
                 <h2 className='conocenos__title'>Conócenos</h2>
                 <p className='conocenos__text'>
@@ -58,20 +79,19 @@ function App() {
                 </p>
             </div>
             <div className='conocenos__img'>
-                <img src={balanza3d} alt="" className='balanza3d'/>
-                <div className='años50'>+50 AÑOS DE EXPERIENCIA</div>
+                <img src={balanza3d} alt="" className='balanza3d' loading='lazy'/>
             </div>
         </section>
         <section className='banner banner1'>
             <h3 className='banner__title'>Transparencia y confianza en cada paso</h3>
         </section>
-        <section className='team'>
+        <section className='team' id='equipo'>
             <h2 className='team__title'>Nuestro equipo</h2>
             <div className='card__wrapper'>
               <div className='card'>
                   <img src={christian} alt="" className='card__img'/>
                   <div className='text__wrapper'>
-                      <h4 className='team__name'>Christian Mc innes</h4>
+                      <h2 className='team__name'>Christian Mc innes</h2>
                       <span className='christian__subtitle'>Especialista en derecho del trabajo</span>
                       <ul class="card__list">
                             <li class="card__list-item">
@@ -88,7 +108,7 @@ function App() {
               <div className='card'>
                   <img src={alejandro} alt="" className='card__img'/>
                   <div className='text__wrapper'>
-                      <h4 className='team__name'>Alejandro Gualdi</h4>
+                      <h2 className='team__name'>Alejandro Gualdi</h2>
                       <span className='christian__subtitle'>Abogado</span>
                       <ul class="card__list">
                             <li class="card__list-item">
@@ -107,13 +127,51 @@ function App() {
         <section className='banner banner2'>
             <h3 className='banner__title'>Defensa legal experta y comprometida</h3>
         </section>
-        <section className='clientes'>
+        <section className='clientes' id='clientes'>
           <div className='clients__text-wrapper'>
               <h2 className='clients__title'>Clientes</h2>
               <p className='clients__text'>Prestigiosas firmas multinacionales y destacadas empresas de Mar del Plata y la región confían en nosotros para su representación legal. A lo largo de los años, hemos forjado relaciones sólidas y duraderas, basadas en la confianza y el compromiso mutuo.</p>
           </div>
           <Carrousel></Carrousel>
         </section>
+        <Areas></Areas>
+        <footer id="footer">
+        <div class="footer__content">
+          <div className='logo__footer-container'>
+          <img src={logo} alt="" className='logo__footer'/>
+          </div>
+
+            <div class="footer__contact">
+                <div class="footer__contact-title">
+                    <h4>Contáctenos</h4>
+                </div>
+                <div class="footer__contact-info">
+                    <div class="footer__contact-item">
+                        <span class="material-symbols-outlined icon">mail</span>
+                        <a href="https://mail.google.com/mail/u/0/?hl=es#inbox?compose=new" target="_blank">info@legalesmdq.com.ar</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <span class="material-symbols-outlined icon">phone_iphone</span>
+                        <div class="footer__contact-item-cell">
+                            <a href="tel: +542234860888">+54 223 486 0888</a>
+                            <a href="tel: +542234860999">+54 223 486 0999</a>
+                        </div>
+                    </div> 
+                    <div class="footer__contact-item">
+                        <span class="material-symbols-outlined icon">location_on</span>
+                        <div class="footer__contact-item-direc">
+                            <h4>Mar del Plata - Argentina</h4>
+                            <a href="https://www.google.com/maps/place/Falucho+1254,+B7600FPZ+Mar+del+Plata,+Provincia+de+Buenos+Aires/@-38.0120343,-57.5407601,17z/data=!3m1!4b1!4m6!3m5!1s0x9584dc3b96cc3c0d:0xa873a76a0519ce34!8m2!3d-38.0120386!4d-57.5381852!16s%2Fg%2F11lj06xxdc?entry=ttu" target="_blank">Falucho 1254</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <span>Desarrollado por: <a href="#">Stairus</a></span>
+            <span>© 2025 Mc Innes - Gualdi Abogados / Todos los derechos reservados.</span>
+        </div>
+    </footer>
     </div>
   );
 }
