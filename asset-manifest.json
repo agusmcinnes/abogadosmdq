@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/abogadosmdq/static/css/main.c493dd7f.css",
-    "main.js": "/abogadosmdq/static/js/main.1025c7d1.js",
+    "main.css": "/abogadosmdq/static/css/main.359fa4e8.css",
+    "main.js": "/abogadosmdq/static/js/main.c9bee154.js",
     "static/media/interior-design-old-architecture.jpg": "/abogadosmdq/static/media/interior-design-old-architecture.0604611f347b889b0d04.jpg",
     "static/media/fast-backward-7740725-unscreen.gif": "/abogadosmdq/static/media/fast-backward-7740725-unscreen.da57e2fde102a557eac1.gif",
     "static/media/Montserrat-ExtraLightItalic.ttf": "/abogadosmdq/static/media/Montserrat-ExtraLightItalic.8df5777e3ea85687bdf0.ttf",
     "static/media/Montserrat-Medium.ttf": "/abogadosmdq/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
     "static/media/Montserrat-Light.ttf": "/abogadosmdq/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
-    "static/media/balanza3d.webp": "/abogadosmdq/static/media/balanza3d.fd4e07e9225af1586cab.webp",
+    "static/media/balanza3d.webp": "/abogadosmdq/static/media/balanza3d.c88249762a18428279da.webp",
     "static/media/Artifika-Regular.ttf": "/abogadosmdq/static/media/Artifika-Regular.06e5776d676b077bd871.ttf",
     "static/media/manosTrato.webp": "/abogadosmdq/static/media/manosTrato.4adfd1a16154e8302681.webp",
-    "static/media/logoAbogados.webp": "/abogadosmdq/static/media/logoAbogados.2a6d7d04b32f469896d4.webp",
-    "static/media/top-view-career-guidance-items-judges_11zon.webp": "/abogadosmdq/static/media/top-view-career-guidance-items-judges_11zon.4a0d0df9355e28c6399d.webp",
+    "static/media/top-view-career-guidance-items-judges_11zon.webp": "/abogadosmdq/static/media/top-view-career-guidance-items-judges_11zon.1ff82f578611437ed0b1.webp",
     "static/media/astillero.png": "/abogadosmdq/static/media/astillero.22ea9ae9103807798504.png",
     "static/media/christianmcinnes.webp": "/abogadosmdq/static/media/christianmcinnes.dadbeedfeb95074061c3.webp",
     "static/media/alejandrogualdi.webp": "/abogadosmdq/static/media/alejandrogualdi.776a032e9f3f9a8b2b50.webp",
@@ -23,12 +22,13 @@
     "static/media/musimundo.png": "/abogadosmdq/static/media/musimundo.72b5ffed3c8d4c29db4b.png",
     "static/media/antares.webp": "/abogadosmdq/static/media/antares.db48bbbb56e0b8af0a99.webp",
     "static/media/sheraton.webp": "/abogadosmdq/static/media/sheraton.d1a34399df692646a924.webp",
+    "static/media/logoAbogados.webp": "/abogadosmdq/static/media/logoAbogados.9401fe5ecb742ad2220d.webp",
     "index.html": "/abogadosmdq/index.html",
-    "main.c493dd7f.css.map": "/abogadosmdq/static/css/main.c493dd7f.css.map",
-    "main.1025c7d1.js.map": "/abogadosmdq/static/js/main.1025c7d1.js.map"
+    "main.359fa4e8.css.map": "/abogadosmdq/static/css/main.359fa4e8.css.map",
+    "main.c9bee154.js.map": "/abogadosmdq/static/js/main.c9bee154.js.map"
   },
   "entrypoints": [
-    "static/css/main.c493dd7f.css",
-    "static/js/main.1025c7d1.js"
+    "static/css/main.359fa4e8.css",
+    "static/js/main.c9bee154.js"
   ]
 }
